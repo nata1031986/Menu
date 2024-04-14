@@ -50,19 +50,29 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     color: white;
    
 }
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  gap: 3rem 2rem;
+  justify-items: center;
+}
 .menu-item {
-   
+    display: grid;
+    gap: 1rem 2rem;
     max-width: 25rem;
-    margin-left: 20px;
+   
     
-     }
+   }
 
 .photo {
     object-fit: cover;
     height: 200px;
     border: 0.25rem solid #b29062;
     border-radius: 15px;
-    margin-left: 29px;
+  
     margin-top: 20px;
     
 }
