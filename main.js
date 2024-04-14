@@ -5,7 +5,7 @@ const menu = [
     category: "breakfast",
     price: 15.99,
     img: "./images/burrito.png",
-    desc: `IFlour tortilla, Rice, Beans, Protein, Cheese, Lettuce or cabbage, Salsa, Sour cream, Guacamole, Onions, Bell peppers, Cilantro, Lime.`,
+    desc: `Flour tortilla, Rice, Beans, Protein, Cheese, Lettuce or cabbage, Salsa, Sour cream, Guacamole, Onions, Bell peppers, Cilantro, Lime.`,
   },
   {
     id: 2,
@@ -61,7 +61,7 @@ const menu = [
     category: "lunch",
     price: 12.99,
     img: "./images/taco.png",
-    desc: ` Food truck truffaut Tortillas (corn or flour), Protein (such as seasoned ground beef, grilled chicken, pork, shrimp, or fish), Lettuce or cabbage, Tomato, Onion, Cheese (such as shredded cheddar or Monterey Jack), Salsa (such as tomato salsa, salsa verde, or pico de gallo), Sour cream, Guacamole, Lime (for squeezing over the tacos), Cilantro (optional), Jalapeños (optional).`
+    desc: ` Food truck truffaut Tortillas,Seasoned ground beef, grilled chicken, pork, shrimp, or fish, Lettuce or cabbage, Tomato, Onion, Cheese, Salsa, Sour cream, Guacamole, Lime, Cilantro (optional), Jalapeños (optional).`
   },
 
 
