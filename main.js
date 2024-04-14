@@ -61,7 +61,8 @@ const menu = [
     category: "lunch",
     price: 12.99,
     img: "./images/taco.png",
-    desc: `   `
+    desc: `Food truck truffaut Tortillas,Seasoned ground beef, grilled chicken, pork, shrimp, or fish, Lettuce or cabbage, Tomato, Onion, Cheese, Salsa, Sour cream, Guacamole,
+                     Lime, Cilantro (optional), Jalapeños (optional).`
   },
 
 
