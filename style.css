@@ -14,7 +14,7 @@ body {
     margin-bottom: 2rem;
 }
 .underline {
-    width: 5rem;
+    width: 4rem;
     height: 0.25rem;
     background: #b29062;
     margin-left: auto;
@@ -50,6 +50,9 @@ body {
     display: grid;
     gap: 1rem 2rem;
     max-width: 25rem;
+    margin-left: 20px;
+     
+
 }
 
 .photo {
@@ -57,12 +60,16 @@ body {
     height: 200px;
     border: 0.25rem solid #b29062;
     border-radius: 15px;
+    margin-left: 29px;
+    margin-top: 20px;
+    
 }
 
 .item-info header {
   display: flex;
   justify-content: space-between;
-  border-bottom: 0.5px dotted #dd8470;
+  border-bottom: 0.5px dotted #b29062;
+  margin-left: 30px;
 
 }
 
@@ -78,6 +85,8 @@ body {
 .item-text {
   margin-bottom: 0;
   padding-top: 1rem;
+  margin-left: 20px;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 768px) {
@@ -98,4 +107,16 @@ body {
   .photo {
     height: 150px;
   }
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+main {
+  min-height: 100vh;
+
+ 
+  place-items: center;
+
 }

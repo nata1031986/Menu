@@ -1,7 +1,7 @@
 const menu = [
   {
     id: 1,
-    title: "burrito.png",
+    title: "Burrito",
     category: "breakfast",
     price: 15.99,
     img: "./images/burrito.png",
@@ -9,7 +9,7 @@ const menu = [
   },
   {
     id: 2,
-    title: "cake",
+    title: "Cake",
     category: "lunch",
     price: 13.99,
     img: "./images/cake.png",
@@ -17,7 +17,7 @@ const menu = [
   },
   {
     id: 3,
-    title: "cupcakes",
+    title: "Cupcakes",
     category: "dinner",
     price: 6.99,
     img: "./images/cupcakes.png",
@@ -25,7 +25,7 @@ const menu = [
   },
   {
     id: 4,
-    title: "lasagne",
+    title: "Lasagne",
     category: "breakfast",
     price: 20.99,
     img: "./images/lasagne.png",
@@ -33,7 +33,7 @@ const menu = [
   },
   {
     id: 5,
-    title: "pasta",
+    title: "Pasta",
     category: "lunch",
     price: 22.99,
     img: "./images/pasta.png",
@@ -41,7 +41,7 @@ const menu = [
   },
   {
     id: 6,
-    title: "pencakes",
+    title: "Pencakes",
     category: "dinner",
     price: 18.99,
     img: "./images/pencakes.png",
@@ -49,21 +49,43 @@ const menu = [
   },
   {
     id: 7,
-    title: "pizza",
+    title: "Pizza",
     category: "breakfast",
     price: 8.99,
     img: "./images/pizza.png",
-    desc: `cPizza dough, Tomato sauce, Mozzarella cheese, Toppings (such as pepperoni, mushrooms, onions, bell peppers, olives, sausage, ham, or pineapple), Olive oil, Garlic (optional), Parmesan cheese (optional), Fresh basil (optional). `,
+    desc: `Pizza dough, Tomato sauce, Mozzarella cheese, Toppings (such as pepperoni, mushrooms, onions, bell peppers, olives, sausage, ham, or pineapple), Olive oil, Garlic (optional), Parmesan cheese (optional), Fresh basil (optional). `,
   },
   {
     id: 8,
-    title: "ataco",
+    title: "Taco",
     category: "lunch",
     price: 12.99,
     img: "./images/taco.png",
-    desc: `on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut Tortillas (corn or flour), Protein (such as seasoned ground beef, grilled chicken, pork, shrimp, or fish), Lettuce or cabbage, Tomato, Onion, Cheese (such as shredded cheddar or Monterey Jack), Salsa (such as tomato salsa, salsa verde, or pico de gallo), Sour cream, Guacamole, Lime (for squeezing over the tacos), Cilantro (optional), Jalapeños (optional).`
+    desc: ` Food truck truffaut Tortillas (corn or flour), Protein (such as seasoned ground beef, grilled chicken, pork, shrimp, or fish), Lettuce or cabbage, Tomato, Onion, Cheese (such as shredded cheddar or Monterey Jack), Salsa (such as tomato salsa, salsa verde, or pico de gallo), Sour cream, Guacamole, Lime (for squeezing over the tacos), Cilantro (optional), Jalapeños (optional).`
   },
 
 
 ];
 
+const sectionCenter = document.querySelector(".section-center");
+
+window.addEventListener("DOMContentLoaded", function() {
+   displayMenuItems(menu)
+});
+
+function displayMenuItems(menuItems) {
+ let displayMenu = menuItems.map(function (item) {
+        return `   <article class="menu-item">
+            <img src=${item.img} class="photo" alt=${item.title} />
+            <div class="item-info">
+                <header>
+                    <h4>${item.title}</h4>
+                    <h4 class="price">$${item.price}</h4>
+                </header>
+                <p class="item-text">${item.desc}</p>
+            </div>
+        </article>`;
+    });
+    displayMenu = displayMenu.join("");
+    sectionCenter.innerHTML = displayMenu;
+}
